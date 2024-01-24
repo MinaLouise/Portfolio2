@@ -39,14 +39,6 @@ body{
     font-size: 36px;
     margin-left: 50px;
   }
-
-  span{
-    color: #0000ff;
-    position: absolute;
-    top: 50%;
-    left: 5%;
-    transform: translateX(-50%);
-  }
   
   /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
   #main {
@@ -55,10 +47,40 @@ body{
   }
   .sidebar{
     background-color: #fd5eb8;
-    min-height: 100vh;
-    max-width: 10vw;
-  
-  
+    /* min-height: 100vh;
+    max-width: 10vw; */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+  }
+  .sidebar span{
+    color: #0000ff;
+    top: 45vh;
+    left: 5%; 
+    transform: translateX(-50%);
+  }
+
+  .profesionalImg{
+    background-color: rgb(164, 164, 0);
+    margin-left: 10.2%;
+    width: 50cap;
+    height: 68.1cap;
+    top: 0;
+    left: 0;
+    position: relative;
+  }
+  /* .profesionalImg img{
+    width: 100%;
+  } */
+  .myName{
+    background-color: red;
+    margin-left: 10.2%;
+    width: 50cap;
+    height: 68.1cap;
+    top: 0;
+    right: 0;
+    -ms-flex-align: end;
+    position: absolute;
   }
 
   /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
