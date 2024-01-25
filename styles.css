@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    width: 100%;
 }
 /* The side navigation menu */
 .sidenav {
@@ -47,9 +48,10 @@ body{
   }
   .sidebar{
     background-color: #fd5eb8;
-    /* min-height: 100vh;
-    max-width: 10vw; */
+    min-height: 100vh;
+    max-width: 10vw; 
     position: absolute;
+    /* margin: auto; */
     top: 0;
     bottom: 0;
   }
@@ -60,27 +62,55 @@ body{
     transform: translateX(-50%);
   }
 
+
   .profesionalImg{
-    background-color: rgb(164, 164, 0);
-    margin-left: 10.2%;
-    width: 50cap;
-    height: 68.1cap;
-    top: 0;
-    left: 0;
-    position: relative;
+    float: left;
+    background-color: rgb(255, 206, 240);
+    width: 50%; 
+    min-height: 100vh;
+    margin-right: 0;
   }
-  /* .profesionalImg img{
+  .profesionalImg img{
     width: 100%;
-  } */
-  .myName{
-    background-color: red;
-    margin-left: 10.2%;
-    width: 50cap;
-    height: 68.1cap;
-    top: 0;
-    right: 0;
-    -ms-flex-align: end;
-    position: absolute;
+    margin-top: 140px;
+  }
+  .nameContainer{
+    float: left;
+    background-color: rgb(255, 240, 250);
+    width: 50%; 
+    min-height: 100vh;
+    margin-right: 0;
+    box-shadow: -5px 0px 9px 0px rgba(80, 65, 74, 0.329);
+  }
+
+  .nameCard{
+    background-color: #0000ff;
+    padding-bottom: 10%;
+    padding-top: 10%;
+  }
+
+  .myFirstName{
+    padding-left: 10cap;
+    /* padding-top: 10cap; */
+    font-size: xx-large;
+    font-style: italic;
+  }
+  .initialM{
+    font-size: 300%;
+    color: #fd5eb8;
+    font-style: normal;
+  }
+  .myLastName{
+    padding-top: 0;
+    padding-left: 10cap;
+    font-size: xx-large;
+    font-style: italic;
+    margin-left: 30px;
+  }
+  .initialS{
+    font-size: 300%;
+    color: #fd5eb8;
+    font-style: normal;
   }
 
   /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
