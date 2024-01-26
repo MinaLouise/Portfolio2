@@ -56,7 +56,7 @@ body{
     bottom: 0;
   }
   .sidebar span{
-    color: #0000ff;
+    color: #f5058d;
     top: 45vh;
     left: 5%; 
     transform: translateX(-50%);
@@ -69,44 +69,50 @@ body{
     width: 50%; 
     min-height: 100vh;
     margin-right: 0;
+    /* position: sticky; */
+    /* position: -webkit-sticky; */
   }
   .profesionalImg img{
     width: 100%;
-    margin-top: 140px;
+    margin-top: 160px;
   }
   .nameContainer{
+    /* min-height: 100vh; */
     float: left;
-    background-color: rgb(255, 240, 250);
-    width: 50%; 
-    min-height: 100vh;
+    background-color: #fff0fa;
+    width: 50%;
+    height: 100vh;
+    overflow-y: auto; 
     margin-right: 0;
     box-shadow: -5px 0px 9px 0px rgba(80, 65, 74, 0.329);
+    position: relative;
   }
 
-  .nameCard{
-    background-color: #0000ff;
-    padding-bottom: 10%;
-    padding-top: 10%;
+  .aboutMe{
+    background-color: antiquewhite;
+    height: 45vh;
+  }
+  .myProject{
+    height: 45vh;
   }
 
   .myFirstName{
-    padding-left: 10cap;
-    /* padding-top: 10cap; */
-    font-size: xx-large;
+    padding-top: 10pc;
+    padding-bottom: 10pc;
+    text-align: center;
+    font-size: 10vh;
     font-style: italic;
+    position: sticky;
+    top: 0;
+    background-color: #fff0fa;
   }
+
   .initialM{
     font-size: 300%;
     color: #fd5eb8;
     font-style: normal;
   }
-  .myLastName{
-    padding-top: 0;
-    padding-left: 10cap;
-    font-size: xx-large;
-    font-style: italic;
-    margin-left: 30px;
-  }
+
   .initialS{
     font-size: 300%;
     color: #fd5eb8;
@@ -540,3 +546,18 @@ body{
         width: 50%;
         height: 50%;
       } 
+
+      .myFirstName{
+        padding-top: 60px;
+        padding-bottom: 60px;
+        text-align: center;
+        font-size: 10vh;
+        font-style: italic;
+        position: sticky;
+        top: 0;
+      }
+
+      .profesionalImg img{
+        width: 100%;
+        margin-top: 210px;
+      }

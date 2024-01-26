@@ -11,8 +11,6 @@ function openNav() {
 
 
 
-
-
 // window.addEventListener('scroll', function() {
 //     var content = document.querySelector('.pagecontent');
 //     var intro = document.querySelector('.intro');
