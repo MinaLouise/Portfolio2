@@ -49,11 +49,11 @@ body{
   .sidebar{
     background-color: #fd5eb8;
     min-height: 100vh;
-    max-width: 10vw; 
+    max-width: 10vw;
     position: absolute;
-    /* margin: auto; */
     top: 0;
     bottom: 0;
+
   }
   .sidebar span{
     color: #f5058d;
@@ -86,24 +86,48 @@ body{
     margin-right: 0;
     box-shadow: -5px 0px 9px 0px rgba(80, 65, 74, 0.329);
     position: relative;
+    margin-top: 0;
   }
 
   .aboutMe{
-    background-color: antiquewhite;
-    height: 45vh;
+    text-align: center;
+    color: #FF78C4;
+    position: relative;
+    font-family: 'Montserrat', 'Times New Roman', Times, serif, georgia;
+    padding-right: 4vh;
+    padding-left: 4vh;
   }
   .myProject{
     height: 45vh;
   }
 
 
+  .myskills{
+    text-align: center;
+    position: relative;
+    font-family: 'Montserrat', 'Times New Roman', Times, serif, georgia;
+    padding: 0px;
+}
+
+.myskills h2{
+    text-align: center;
+    color: #FF78C4;
+    font-size: 70px;
+}
+.card-button {
+  float: left;
+}
+  .card-button{
+    margin: 10cap 10cap;
+  }
+
   .myFirstName{
     padding-top: 10pc;
     padding-bottom: 10pc;
     text-align: center;
-    font-size: 10vh;
+    font-size: 50pt;
     font-style: italic;
-    position: sticky;
+    /* position: sticky; */
     top: 0;
     /* background-color: #fff0fa; */
   }
@@ -121,12 +145,12 @@ body{
   }
 
   /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-  @media screen and (max-height: 850px) {
+  @media screen and (max-height: 600px) {
     /* .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;} */
 
     .sidenav {
-      height: 20%; /* 100% Full-height */
+      height: 100%; /* 100% Full-height */
       width: 0; /* 0 width - change this with JavaScript */
       position: fixed; /* Stay in place */
       z-index: 1; /* Stay on top */
@@ -134,16 +158,16 @@ body{
       left: 0;
       background-color: #111; /* Black*/
       overflow-x: hidden; /* Disable horizontal scroll */
-      padding-top: 60px; /* Place content 60px from the top */
+      padding-top: 15px; /* Place content 60px from the top */
       transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
   
     }
     
     /* The navigation menu links */
     .sidenav a {
-      padding: 8px 8px 8px 32px;
+      padding: 10px 15px;
       text-decoration: none;
-      font-size: 25px;
+      font-size: 18px;
       color: #818181;
       display: block;
       transition: 0.3s;
@@ -159,7 +183,7 @@ body{
       position: absolute;
       top: 0;
       right: 25px;
-      font-size: 36px;
+      font-size: 24px;
       margin-left: 50px;
     }
     
@@ -170,11 +194,12 @@ body{
     }
     .sidebar{
       background-color: #fd5eb8;
-      min-height: 100vh;
-      max-width: 10vw; 
-      position: absolute;
+      position: fixed;
+      width: 100%; /* Use the full width of the screen */
+      height: auto; /* Adjust the height as needed */
+      max-height: 100vh; /* Limit the height to the viewport height */
       top: 0;
-      bottom: 0;
+      bottom: auto;
     }
     .sidebar span{
       color: #f5058d;
@@ -188,7 +213,8 @@ body{
       float: left;
       background-color: rgb(255, 206, 240);
       width: 50%; 
-      min-height: 100vh;
+      min-height: 50vh;
+      margin-top: 80px;
       overflow-y: auto; 
       margin-right: 0;
       /* position: sticky; */
@@ -200,15 +226,16 @@ body{
     }
     
     .nameContainer{
-      /* min-height: 100vh; */
+      min-height: 100vh;
       float: left;
       background-color: #fff0fa;
       width: 50%;
-      height: 100vh;
+      height: auto;
       overflow-y: auto; 
       margin-right: 0;
       box-shadow: -5px 0px 9px 0px rgba(80, 65, 74, 0.329);
       position: relative;
+      margin-top: 0%;
     }
   
     .aboutMe{
@@ -220,10 +247,11 @@ body{
     }
   
     .myFirstName{
-      padding-top: 60px;
+      padding: 20px;
+      padding-top: 0%;
       padding-bottom: 60px;
       text-align: center;
-      font-size: 6vh;
+      font-size: 4vh;
       font-style: italic;
       position: sticky;
       top: 0;
