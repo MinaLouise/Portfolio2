@@ -1,7 +1,14 @@
+*{
+  box-sizing: border-box;
+}
 body{
     margin: 0;
     width: 100%;
 }
+
+footer{
+padding-top: 10pt;}
+
 /* The side navigation menu */
 .sidenav {
     height: 100%; /* 100% Full-height */
@@ -89,18 +96,27 @@ body{
     margin-top: 0;
   }
 
+  .nameContainer img{
+    min-height: 350pt;
+  }
+
   .aboutMe{
     text-align: center;
+    font-size: xx-large;
     color: #FF78C4;
     position: relative;
     font-family: 'Montserrat', 'Times New Roman', Times, serif, georgia;
     padding-right: 4vh;
     padding-left: 4vh;
+    padding-bottom: 200pt;
   }
   .myProject{
     height: 45vh;
   }
-
+/* .myProject img{
+  max-width: 90pt;
+  min-height: 90pt;
+} */
 
   .myskills{
     text-align: center;
@@ -127,6 +143,8 @@ body{
     text-align: center;
     font-size: 50pt;
     font-style: italic;
+    float: top;
+    margin-top: 0%;
     /* position: sticky; */
     top: 0;
     /* background-color: #fff0fa; */
@@ -144,10 +162,49 @@ body{
     font-style: normal;
   }
 
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  margin-bottom: 50pt;
+}
+
+.whatIknow{
+  text-align: center;
+  display: flex; 
+  gap: 10px;
+}
+.whatIknow i{
+  font-size: 300%;
+  padding-left: 4%;
+
+}
+
   /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
   @media screen and (max-height: 600px) {
-    /* .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;} */
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
 
     .sidenav {
       height: 100%; /* 100% Full-height */
@@ -440,18 +497,18 @@ body{
         font-size: 70px;
     }
 
-    .whatIknow{
-        text-align: center;
-        /* display: flex; 
-        gap: 10px;
-    }
+   
     .icon{
         transition: transform 0.5s ease;
     }
     .icon:hover{
         transform: rotateY(180deg);
     }
-
+ .whatIknow{
+        text-align: center;
+        /* display: flex; 
+        gap: 10px;
+    }
     .whatIknow i{
         font-size: 300%;
         padding: 9%;
@@ -548,10 +605,7 @@ body{
         box-sizing: border-box;
     }
     
-    .rows{
-        display: flex;
-        flex-wrap: wrap;
-    }
+  
 /* timeline 
     .timeline{
         box-sizing: border-box;
