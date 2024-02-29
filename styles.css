@@ -55,11 +55,10 @@ padding-top: 10pt;}
   }
   .sidebar{
     background-color: #fd5eb8;
-    min-height: 100vh;
-    max-width: 10vw;
+    /* min-height: 10vh; */
+    max-width: 10vh;
     position: absolute;
-    top: 0;
-    bottom: 0;
+
 
   }
   .sidebar span{
@@ -71,24 +70,26 @@ padding-top: 10pt;}
 
 
   .profesionalImg{
-    float: left;
+    float: top;
     background-color: rgb(255, 206, 240);
-    width: 50%; 
-    min-height: 100vh;
+    width: 100%; 
+    min-height: 40vh;
     margin-right: 0;
     /* position: sticky; */
     /* position: -webkit-sticky; */
   }
   .profesionalImg img{
-    width: 100%;
-    margin-top: 160px;
+    width: 50%;
+    margin-left: 9vh;
+    margin-top: 0px;
+    
   }
   .nameContainer{
     /* min-height: 100vh; */
     float: left;
     background-color: #fff0fa;
-    width: 50%;
-    height: 100vh;
+    width: 100%;
+    height: 60vh;
     overflow-y: auto; 
     margin-right: 0;
     box-shadow: -5px 0px 9px 0px rgba(80, 65, 74, 0.329);
@@ -96,9 +97,9 @@ padding-top: 10pt;}
     margin-top: 0;
   }
 
-  .nameContainer img{
-    min-height: 350pt;
-  }
+  /* .nameContainer img{
+    min-height: 350vh; 
+  } */
 
   .aboutMe{
     text-align: center;
@@ -108,7 +109,8 @@ padding-top: 10pt;}
     font-family: 'Montserrat', 'Times New Roman', Times, serif, georgia;
     padding-right: 4vh;
     padding-left: 4vh;
-    padding-bottom: 200pt;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
   }
   .myProject{
     height: 45vh;
@@ -138,15 +140,15 @@ padding-top: 10pt;}
   }
 
   .myFirstName{
-    padding-top: 10pc;
-    padding-bottom: 10pc;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
     text-align: center;
-    font-size: 50pt;
+    font-size: 2vh;
     font-style: italic;
-    float: top;
-    margin-top: 0%;
+    float: right;
+    /* margin-top: 0%; */
     /* position: sticky; */
-    top: 0;
+    /* top: 0; */
     /* background-color: #fff0fa; */
   }
 
