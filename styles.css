@@ -7,7 +7,9 @@ body{
 }
 
 footer{
-padding-top: 10pt;}
+padding-top: 1vh;
+padding-bottom: 3vh;
+}
 
 /* The side navigation menu */
 .sidenav {
@@ -222,9 +224,11 @@ padding-top: 10pt;}
     .sidebar{
       /* background-color: #fd5eb8; */
       /* min-height: 10vh; */
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
       max-width: 10vh;
-      position: absolute;
-  
+      position: sticky;
   
     }
     .sidebar span{
@@ -233,7 +237,6 @@ padding-top: 10pt;}
       left: 5%; 
       transform: translateX(-50%);
     }
-  
   
     .profesionalImg{
       float: top;
@@ -246,9 +249,11 @@ padding-top: 10pt;}
     }
     .profesionalImg img{
       border-radius: 100vh;
-      width: 20%;
-      margin-left: 9vh;
-      margin-top: 0px;
+      display: block;
+      width: 40%;
+      margin-bottom: 10vh;
+      margin-left: auto;
+      margin-right: auto;
       
     }
     .nameContainer{
@@ -264,11 +269,11 @@ padding-top: 10pt;}
       margin-top: 0;
     }
   
-    /* .nameContainer img{
-      min-height: 350vh; 
-    } */
+  .nameContainer img{
+      margin-top: 1vh;
+    }
   
-    .aboutMe{
+  .aboutMe{
       text-align: center;
       font-size: xx-large;
       color: #FF78C4;
@@ -279,15 +284,18 @@ padding-top: 10pt;}
       padding-top: 5vh;
       padding-bottom: 5vh;
     }
-    .myProject{
+  
+  .myProject{
       height: 45vh;
     }
-  /* .myProject img{
-    max-width: 90pt;
-    min-height: 90pt;
-  } */
   
-    .myskills{
+  .skillcontent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .myskills{
       text-align: center;
       position: relative;
       font-family: 'Montserrat', 'Times New Roman', Times, serif, georgia;
@@ -302,31 +310,28 @@ padding-top: 10pt;}
   .card-button {
     float: left;
   }
-    .card-button{
-      margin: 10cap 10cap;
-    }
+  .card-button{
+    margin: 10cap 10cap;
+  }
   
     .myFirstName{
-      padding-top: 5vh;
-      padding-bottom: 5vh;
+      margin-top: 3vh;
+      position: relative;
+      padding-bottom: 0vh;
       text-align: center;
-      font-size: 2vh;
+      font-size: 5vh;
       font-style: italic;
-      float: right;
-      /* margin-top: 0%; */
-      /* position: sticky; */
-      /* top: 0; */
-      /* background-color: #fff0fa; */
+      /* margin-right: 30%; */
     }
   
     .initialM{
-      font-size: 300%;
+      font-size: 9vh;
       color: #fd5eb8;
       font-style: normal;
     }
   
     .initialS{
-      font-size: 300%;
+      font-size: 9vh;
       color: #fd5eb8;
       font-style: normal;
     }
