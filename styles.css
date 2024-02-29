@@ -13,7 +13,7 @@ padding-top: 10pt;}
 .sidenav {
     height: 100%; /* 100% Full-height */
     width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
+    position: absolute;/* Stay in place */
     z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
     left: 0;
@@ -65,8 +65,7 @@ padding-top: 10pt;}
     /* background-color: #fd5eb8; */
     /* min-height: 10vh; */
     max-width: 10vh;
-    position: absolute;
-
+    position: static;
 
   }
   .sidebar span{
@@ -75,7 +74,6 @@ padding-top: 10pt;}
     left: 5%; 
     transform: translateX(-50%);
   }
-
 
   .profesionalImg{
     float: top;
@@ -90,6 +88,7 @@ padding-top: 10pt;}
     border-radius: 100vh;
     display: block;
     width: 30%;
+    margin-top: 5vh;
     margin-left: auto;
     margin-right: auto;
     
@@ -145,12 +144,12 @@ padding-top: 10pt;}
 .card-button {
   float: left;
 }
-  .card-button{
-    margin: 10cap 10cap;
-  }
+.card-button{
+  margin: 10cap 10cap;
+}
 
   .myFirstName{
-    padding-bottom: 5vh;
+    margin-top: 3vh;
     position: relative;
     padding-bottom: 0vh;
     text-align: center;
