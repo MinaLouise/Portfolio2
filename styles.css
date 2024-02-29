@@ -53,6 +53,14 @@ padding-top: 10pt;}
     transition: margin-left .5s;
     padding: 20px;
   }
+
+  .mina {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   .sidebar{
     /* background-color: #fd5eb8; */
     /* min-height: 10vh; */
@@ -80,9 +88,10 @@ padding-top: 10pt;}
   }
   .profesionalImg img{
     border-radius: 100vh;
-    width: 20%;
-    margin-left: 9vh;
-    margin-top: 0px;
+    display: block;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
     
   }
   .nameContainer{
@@ -98,9 +107,9 @@ padding-top: 10pt;}
     margin-top: 0;
   }
 
-  /* .nameContainer img{
-    min-height: 350vh; 
-  } */
+  .nameContainer img{
+    margin-top: 1vh;
+  }
 
   .aboutMe{
     text-align: center;
@@ -141,16 +150,13 @@ padding-top: 10pt;}
   }
 
   .myFirstName{
-    /* padding-top: 5vh; */
+    padding-bottom: 5vh;
     position: relative;
     padding-bottom: 0vh;
     text-align: center;
     font-size: 5vh;
     font-style: italic;
-    float: top;
     /* margin-right: 30%; */
-    /* top: 0; */
-    /* background-color: #fff0fa; */
   }
 
   .initialM{
