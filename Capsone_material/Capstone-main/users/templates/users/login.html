@@ -1,0 +1,12 @@
+{% extends "app/base.html" %}
+{% load tailwind_filters %}
+
+{% block page_title %}Login{% endblock page_title %}
+
+{% block content %}
+<form action="{% url "login" %}" method="post">
+    {% csrf_token %}
+    {{form|crispy}}
+    <button type="submit" class="bg-sky-400 hover:bg-sky-500 transition-colors duration-300 px-5 py-2 rounded-full text-white">Login</button>
+</form>
+{% endblock content %}
